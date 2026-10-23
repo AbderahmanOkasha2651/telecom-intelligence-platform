@@ -1,0 +1,26 @@
+
+# Raw datasets and original archives
+/data/raw/
+/data/archives/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Processing runtime
+checkpoints/
+spark-warehouse/
+warehouse/
+*.log
+
+# Editor
+.vscode/
+.idea/
