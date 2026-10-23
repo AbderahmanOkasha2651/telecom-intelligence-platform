@@ -1,0 +1,63 @@
+{
+  "manifest_version": 1,
+  "datasets": [
+    {
+      "id": "network",
+      "name": "Commercial RAN Performance Counters",
+      "source_type": "real_anonymized",
+      "domain": "network_monitoring",
+      "record_id": "17815388",
+      "source_url": "https://zenodo.org/records/17815388",
+      "doi": "10.5281/zenodo.17815388",
+      "license": "CC BY 4.0 (per source README)",
+      "archive": {
+        "filename": "Dataset_01.zip",
+        "url": "https://zenodo.org/records/17815388/files/Dataset_01.zip?download=1",
+        "path": "data/archives/Dataset_01.zip",
+        "md5": "cba4e8c2887c0d9382c6a63736fe5ad5"
+      },
+      "mappings": [
+        {
+          "source_prefix": "Dataset_01/Baseband_02/",
+          "destination": "data/raw/network"
+        }
+      ],
+      "expected_files": [
+        "data/raw/network/Dataset_01_LTE_2100.csv",
+        "data/raw/network/Dataset_01_NR_1800.csv"
+      ]
+    },
+    {
+      "id": "fraudzen",
+      "name": "FraudZen SIMBox Fraud Dataset",
+      "source_type": "synthetic",
+      "domain": "fraud_detection",
+      "record_id": "15706356",
+      "source_url": "https://zenodo.org/records/15706356",
+      "doi": "10.5281/zenodo.15706356",
+      "license": "CC BY 4.0",
+      "archive": {
+        "filename": "Fraudzen-dataset.zip",
+        "url": "https://zenodo.org/records/15706356/files/Fraudzen-dataset.zip?download=1",
+        "path": "data/archives/Fraudzen-dataset.zip",
+        "md5": "395fb1e8c21c0c752ecfbbab8bfe8d54"
+      },
+      "mappings": [
+        {
+          "source_prefix": "Fraudzen-dataset/FraudZen_Cdrs/",
+          "destination": "data/raw/fraudzen/scenarios"
+        },
+        {
+          "source_prefix": "Fraudzen-dataset/Inputs/",
+          "destination": "data/raw/fraudzen/Inputs"
+        }
+      ],
+      "exact_files": {
+        "Fraudzen-dataset/Readme.md": "data/raw/fraudzen/Readme.md"
+      },
+      "expected_files": [
+        "data/raw/fraudzen/Readme.md"
+      ]
+    }
+  ]
+}
